@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="card">
+        <div class="card-header__layout">
+          <div class="star__container">
+            <i class="fa-solid fa-star star-icon"></i>
+          </div>
+        </div>
+        <div class="card-body__layout">
+          <div class="title">How did we do?</div>
+          <div class="paragraph">
+            Please let us know how we did your support request. All feeback is
+            appreciated to help us to improve our offering!
+          </div>
+        </div>
+
+        <div class="card-rating__layout">
+          <div class="num__container">
+            <div class="number">1</div>
+          </div>
+          <div class="num__container">
+            <div class="number">2</div>
+          </div>
+          <div class="num__container">
+            <div class="number">3</div>
+          </div>
+          <div class="num__container">
+            <div class="number">4</div>
+          </div>
+          <div class="num__container">
+            <div class="number">5</div>
+          </div>
+        </div>
+        <button class="card-button">SUBMIT</button>
+      </div>
+      <!-- hidden card -->
+      <div class="hidden-card">
+        <img alt="thank-you" src="assets/illustration-thank-you.svg" />
+        <div class="head">You selected 4 out of 5</div>
+        <div class="body">
+          <div class="title">Thank you!</div>
+          <div class="paragraph">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </div>
+        </div>
+        <button id="final-button" class="card-button">Good bye</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

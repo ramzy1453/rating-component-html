@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #252d37;
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-header__layout {
+  display: flex;
+}
+
+.card-header__layout > .star__container {
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323c47;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.star__container > .star-icon {
+  color: orange;
+  font-size: 1.1em;
+}
+
+/********** CARD BODY LAYOUT ********************/
+
+.card-body__layout {
+  color: white;
+}
+
+.card-body__layout > .title {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  font-size: 1.5em;
+}
+.card-body__layout > .paragraph {
+  color: rgba(255, 255, 255, 0.705);
+}
+
+.card-rating__layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-rating__layout > .num__container {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323c47;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  cursor: pointer;
+}
+.num__container > .number {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card-button {
+  background-color: orange;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: rgb(224, 151, 14);
+}
+
+.num__container:nth-child(1) {
+  background-color: orange;
+}
+
+/******** HIDDEN CONTENT *********************/
+.hidden-card {
+  color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #252d37;
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.hidden-card > img {
+  width: 50%;
+}
+
+.hidden-card > .head {
+  color: orange;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #323c47;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.hidden-card > .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden-card > .body > .title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.hidden-card > .body > .paragraph {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.705);
+}
